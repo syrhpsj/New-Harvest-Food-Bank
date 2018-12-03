@@ -1,0 +1,153 @@
+/*Joseph Reyes, November 18, 2018*/
+
+/*Style to create a fluid image*/
+img {
+
+	max-width: 100%;
+
+}
+
+/*Style specifies padding and margins for unordered list*/
+
+nav ul {
+
+	padding: 0;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+
+}
+
+/* Style for nav li specifies the background color, rounded corners, removes bullet style, and applies margins and padding for list items within the navigation */
+nav li {
+
+	background-color: #FF6600;
+	border-radius: 1em;
+	list-style-type: none;
+	margin: 0.3em;
+	padding: 0.4em;
+
+}
+
+nav p {
+
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+input, textaread {
+	display: block;
+	margin-bottom: 1em;
+}
+
+label {
+	display: block;
+}
+
+.video {
+	text-align: center;
+	padding-left: 1em;
+}
+
+video {
+	border: 0.2em solid #FF6600;
+	height: auto;
+	max-width: 100%;
+}
+
+/*Style displays the mobile class*/
+
+@media (min-width: 481px) and (max-width: 767px) /*Mobile*/{
+
+	.mobile {
+		display: inline;
+	}
+
+	section {
+		padding: 1%;
+		text-align: center;
+	}
+
+	article {
+		border-top: solid 0.2em #FF6600;
+		padding: 2%
+		margin: 0.5%;
+		text-align: left;
+	}
+
+	aside {
+		text-align: center;
+		color: #FFFFFF;
+		background-color: #FF6600;
+		font-size: 1.25em;
+		margin: 1em;
+		padding: 1em;
+
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) /*Tablet*/{
+
+	section {
+		background-color: #FF6600;
+	}
+
+	article {
+		background-color: #FFFFFF;
+		border-top: 0;
+		border-radius: 0 3em 3em 3em;
+		margin-bottom: 1em;
+	}
+
+	aside {
+		text-align: center;
+		color: #FF6600;
+		background-color: #FFFFFF;
+		box-shadow: 1em 1em 1em #0000000;
+		border-radius: 8em;
+
+	}
+
+	table, th, td {
+		border: solid 0,1em #FF6600;
+		border-collapse: collapse;
+		padding: 1em;
+	}
+
+	caption {
+		font-size: 1.5em;
+		padding-bottom: 1em;
+	}
+
+	label {
+		float: left;
+		padding-right: 0.5em;
+		text-align: right;
+		width: 8em;
+	}
+}
+
+@media (min-width: 1281px) /*Desktop*/ {
+
+	main {
+		overflow: auto;
+	}
+
+	section {
+		float: left;
+		width: 60%;
+	}
+
+	aside {
+		float: right;
+		width: 25%;
+		background-color: #FF6600;
+		color: #FFFFFF;
+	}
+
+	table {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 1em;
+	}
+}
